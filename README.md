@@ -1,6 +1,8 @@
+# Setting up a Static Website on AWS S3 with Custom Domain
+
 Steps:
 
-1. Create an S3 bucket with the same name as your custom domain name , which in my case is         “movetocloud.xyz", and upload an index.html file to the bucket
+1. Create an S3 bucket with the same name as your custom domain name , which in my case is “movetocloud.xyz", and upload an index.html file to the bucket
 2. Under the bucket properties tab, enable static website hosting and select index.html file
 3. Now in the permissions tab, add a bucket policy that allows public read access to the objects stored in the S3 bucket
 4. Test the website by using the S3 object URL and it should work.
